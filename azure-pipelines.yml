@@ -29,7 +29,7 @@ jobs:
       pipeline: Azure.sonic-buildimage.common_libs
       artifact: common-lib
       runVersion: 'latestFromBranch'
-      runBranch: 'master'
+      runBranch: 'refs/heads/master'
       path: $(Build.ArtifactStagingDirectory)/download
       patterns: |
         target/debs/bullseye/libprotobuf*.deb
